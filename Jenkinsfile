@@ -7,6 +7,12 @@ pipeline {
       }
     }
 
+    stage('step2') {
+      steps {
+        sh 'echo 2nd-step'
+      }
+    }
+
   }
   environment {
     USER = 'JOHNWU94'
